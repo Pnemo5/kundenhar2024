@@ -1,0 +1,147 @@
+body{
+    margin: 0%;
+}
+
+page1{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 10rem 3rem 20rem 20rem 3rem 10rem;
+    grid-template-areas:
+    'hd hd'
+    'nav nav'
+    'sec1 img1'
+    'main1 main1'
+    'icon1 icon1'
+    'ft ft';
+}
+
+page2{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 1fr;
+    grid-template-rows: 10rem 3rem 22rem 10rem 10rem 10rem;
+    grid-template-areas:
+    'hd hd hd hd'
+    'nav nav nav nav'
+    'main2 main2 main2 as'
+    'fc1 bd1 fc2 bd2'
+    'bd3 fc3 bd4 fc4'
+    'ft ft ft ft';
+}
+
+page3{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: calc(100%/3) calc(100%/3) 1fr;
+    grid-template-rows: 10rem 3rem 10rem 30rem 10rem;
+    grid-template-areas:
+    'hd hd hd'
+    'nav nav nav'
+    'gly gly gly'
+    'tip tip tip'
+    'ft ft ft';
+}
+
+
+/*SHARED THINGS*/
+header{
+    grid-area: hd;
+    background-color: #FFC107;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #F97068;
+
+}
+
+footer{
+    grid-area: ft;
+    background-color: #FFC107;
+}
+
+/*HOME PAGE*/
+section1{
+    grid-area: sec1;
+    background-color: #EDF2EF;
+
+}
+
+image{
+    grid-area: img1;
+    background-color: #57C4E5;
+
+}
+
+main1{
+    grid-area: main1;
+    background-color: #FFC107;
+
+}
+
+icon1{
+    grid-area: icon1;
+    background-color: #EDF2EF;
+
+}
+
+/* HEALTH PAGE */
+main2{
+    grid-area: main2;
+    background-color: #FFC107;
+}
+
+aside{
+    grid-area: as;
+    background-color: #57C4E5;
+}
+
+fact1{
+    grid-area: fc1;
+    background-color: #EDF2EF;
+}
+fact2{
+    grid-area: fc2;
+    background-color: #EDF2EF;
+}
+fact3{
+    grid-area: fc3;
+    background-color: #EDF2EF;
+}
+fact4{
+    grid-area: fc4;
+    background-color: #EDF2EF;
+}
+
+bild1{
+    grid-area: bd1;
+    background-color: #57C4E5;
+}
+bild2{
+    grid-area: bd2;
+    background-color: #57C4E5;
+}
+bild3{
+    grid-area: bd3;
+    background-color: #57C4E5;
+}
+bild4{
+    grid-area: bd4;
+    background-color: #57C4E5;
+}
+
+/*TRAINGING PAGE*/
+
+gallery{
+    grid-area: gly;
+    background-color: #57C4E5;
+}
+
+tips{
+    grid-area: tip;
+    background-color: #FFC107;
+}
