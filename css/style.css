@@ -50,13 +50,38 @@ page3{
 /*SHARED THINGS*/
 header{
     grid-area: hd;
-    background-color: #FFC107;
+    background-color: #EDF2EF;
 }
 
 nav{
+    display: flex;
     grid-area: nav;
-    background-color: #F97068;
+    background-image:linear-gradient( to right, #FFC107, #F97068, #F97068, #F97068, #F97068, #FFC107 );
+    flex-direction: row;
+    justify-content: center;
 
+}
+
+.navigation_link{
+    display: flex;
+    color: #652f2d;
+    width: 15rem;
+    background-color: #EDF2EF;
+    border: solid #F97068 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 150%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease;
+
+}
+
+.navigation_link:hover{
+    background-color: #F97068;
+    color: white;
+    
 }
 
 footer{
@@ -67,14 +92,22 @@ footer{
 /*HOME PAGE*/
 section1{
     grid-area: sec1;
-    background-color: #EDF2EF;
+    margin: 2rem;
 
 }
 
-image{
+#imagepage1{
     grid-area: img1;
-    background-color: #57C4E5;
+    background-color: #EDF2EF;
+    border-radius: 0 10rem 0 10rem;
+    margin: 2rem;
+    overflow: hidden;
+    
 
+}
+
+img{
+    width: 100%;
 }
 
 main1{
