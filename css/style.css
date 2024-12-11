@@ -13,7 +13,7 @@ page1{
     'nav nav'
     'sec1 img1'
     'main1 main1'
-    'icon1 icon1'
+    'ikn ikn'
     'ft ft';
 }
 
@@ -112,12 +112,40 @@ img{
 
 main1{
     grid-area: main1;
-    background-color: #FFC107;
+    display: grid;
+    grid-template-columns: calc(100%/3) calc(100%/3) 1fr;
+    grid-template-rows: 20% 55% 1fr;
+    grid-template-areas:
+    'rub rub rub'
+    'new new new'
+    'lme lme lme';
+    background-image:linear-gradient( to bottom, #FFC107, #FFC107, #FFC107, #F97068);
 
 }
 
-icon1{
-    grid-area: icon1;
+#nyhetsrubrik1{
+    grid-area: rub;
+    margin-left: 1%;
+}
+.nyhetpage1{
+    margin: 3%;
+}
+.lasmerpage1{
+    margin: 3%;
+    padding: 4%;
+    background-color:#ffdb6e;
+    width: 80px;
+    text-align: center;
+    border: solid rgb(0, 0, 0) 1px;
+}
+.lasmerpage1:hover{
+    background-color:#57C4E5;
+    transition: 200ms;
+
+}
+
+#ikon{
+    grid-area: ikn;
     background-color: #EDF2EF;
 
 }
