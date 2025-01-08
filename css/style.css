@@ -27,8 +27,7 @@ page2{
     'hd hd hd hd'
     'nav nav nav nav'
     'main2 main2 main2 as'
-    'fc1 bd1 fc2 bd2'
-    'bd3 fc3 bd4 fc4'
+    'main2 main2 main2 as'
     'ft ft ft ft';
 }
 
@@ -50,7 +49,15 @@ page3{
 /*SHARED THINGS*/
 header{
     grid-area: hd;
-    background-color: #EDF2EF;
+    display: flex;
+    background-color: #ffdb6e;
+    justify-content: center;
+    /*#ffdb6e*/
+}
+
+#logo{
+    height: 90%;
+    width: 15%;
 }
 
 nav{
@@ -66,7 +73,7 @@ nav{
     display: flex;
     color: #652f2d;
     width: 15rem;
-    background-color: #EDF2EF;
+    background-color: white;
     border: solid #F97068 3px;
     text-decoration: none;
     text-transform: uppercase;
@@ -93,6 +100,7 @@ footer{
 section1{
     grid-area: sec1;
     margin: 2rem;
+    overflow: hidden;
 
 }
 
@@ -119,7 +127,7 @@ main1{
     'rub rub rub'
     'new new new'
     'lme lme lme';
-    background-image:linear-gradient( to bottom, #FFC107, #FFC107, #FFC107, #F97068);
+    background-image:linear-gradient( to bottom, #ffdb6e, #ffdb6e, #FFC107, #F97068);
 
 }
 
@@ -129,6 +137,7 @@ main1{
 }
 .nyhetpage1{
     margin: 3%;
+    overflow: hidden;
 }
 .lasmerpage1{
     margin: 3%;
@@ -139,70 +148,74 @@ main1{
     border: solid rgb(0, 0, 0) 1px;
 }
 .lasmerpage1:hover{
-    background-color:#57C4E5;
+    background-color:#a9dbff;
     transition: 200ms;
 
 }
 
 #ikon{
     grid-area: ikn;
-    background-color: #EDF2EF;
+    display: flex;
+    background-color: white;
+    height: 100%;
+    width: 4rem;
+    
+    
 
 }
 
 /* HEALTH PAGE */
 main2{
     grid-area: main2;
-    background-color: #FFC107;
+    display: flex;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
 }
+
 
 aside{
     grid-area: as;
-    background-color: #57C4E5;
+    background-color: #ffdb6e;
+    padding: 2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    border: #FFC107, solid, 3px;
+    overflow: hidden;
 }
 
-fact1{
-    grid-area: fc1;
-    background-color: #EDF2EF;
+.facts{
+    background-color: #a9dbff;
+    width: 20%;
+    border-radius: 30px;
+    padding: 1.5%;
+    height: 12rem;
+    overflow: hidden;
 }
-fact2{
-    grid-area: fc2;
-    background-color: #EDF2EF;
-}
-fact3{
-    grid-area: fc3;
-    background-color: #EDF2EF;
-}
-fact4{
-    grid-area: fc4;
-    background-color: #EDF2EF;
-}
-
-bild1{
-    grid-area: bd1;
-    background-color: #57C4E5;
-}
-bild2{
-    grid-area: bd2;
-    background-color: #57C4E5;
-}
-bild3{
-    grid-area: bd3;
-    background-color: #57C4E5;
-}
-bild4{
-    grid-area: bd4;
-    background-color: #57C4E5;
+.bilds{
+    background-color: #652f2d;
+    width: 23%;
+    border-radius: 30px;
+    height: 43%;
+    margin-top: 1rem;
 }
 
 /*TRAINGING PAGE*/
 
 gallery{
     grid-area: gly;
-    background-color: #57C4E5;
+    background-color: #ffdb6e;
+    display: flex;
+    border: #F97068, solid, 5px;
+}
+.gallerybild{
+    margin: 1%;
+    border: #652f2d, solid, 3px;
 }
 
 tips{
     grid-area: tip;
-    background-color: #FFC107;
+    background-color: #EDF2EF;
 }
