@@ -7,7 +7,7 @@ page1{
     height: 100vh;
     width: 100%;
     grid-template-columns: 50% 1fr;
-    grid-template-rows: 10rem 3rem 20rem 20rem 3rem 5rem;
+    grid-template-rows: 10rem 3rem 20rem 20rem 4rem 5rem;
     grid-template-areas:
     'hd hd'
     'nav nav'
@@ -59,6 +59,7 @@ header{
 #logo{
     height: 90%;
     width: 15%;
+    margin-top: 8px;
 }
 
 nav{
@@ -95,6 +96,18 @@ nav{
 footer{
     grid-area: ft;
     background-color: #FFC107;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerinfo{
+    align-self: center;
+    text-decoration: underline;
+}
+
+.footerinfo:hover{
+    color: blue;
 }
 
 /*HOME PAGE*/
@@ -103,6 +116,10 @@ section1{
     margin: 2rem;
     overflow: hidden;
 
+}
+
+#welcometext{
+    font-size: large;
 }
 
 #imagepage1{
@@ -154,14 +171,21 @@ main1{
 
 }
 
-#ikon{
+icon1{
     grid-area: ikn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#ikon{
+
     display: flex;
     background-color: white;
     height: 100%;
     width: 4rem;
-    
-    
+
 
 }
 
@@ -244,6 +268,11 @@ tips{
     width: 10%;
     padding: 5px;
     border: #508db8, solid, 2px;
+    text-align: center;
+    align-self: center;
+    padding: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 
 }
 
@@ -252,5 +281,5 @@ tips{
     transition: 300ms;
     width: 15%;
     border: #ba4b45, solid, 2px;
-
 }
+
